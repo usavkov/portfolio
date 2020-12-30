@@ -313,42 +313,44 @@ footer {
   justify-content: center;
 }
 
-.wrapper {
-  max-width: 900px;
-  margin: auto;
-}
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    max-width: 900px;
+    margin: auto;
+  }
 
-.myphoto {
-  height: 350px;
-  object-fit: cover;
-  object-position: 0 20%;
-}
+  .myphoto {
+    height: 350px;
+    object-fit: cover;
+    object-position: 0 20%;
+  }
 
-.projects {
-  width: 100%;
-}
+  .projects {
+    width: 100%;
+  }
 
-.users-info {
-  gap: 30px;
-}
+  .users-info {
+    gap: 30px;
+  }
 
-#email,
+  #email,
 #users-name,
 #subject {
-  height: 30px;
-}
+    height: 30px;
+  }
 
-#message {
-  height: 120px;
-}
+  #message {
+    height: 120px;
+  }
 
-.social {
-  gap: 30px;
-}
+  .social {
+    gap: 30px;
+  }
 
-.social > li > a > img {
-  width: 48px;
-  height: 48px;
+  .social > li > a > img {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
