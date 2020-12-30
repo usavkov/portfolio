@@ -322,7 +322,7 @@ footer {
   .myphoto {
     height: 350px;
     object-fit: cover;
-    object-position: 0 20%;
+    object-position: 0 15%;
   }
 
   .projects {
