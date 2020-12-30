@@ -1,3 +1,19 @@
+.logo-html path:nth-child(1) {
+  fill: #E44D26;
+}
+
+.logo-html path:nth-child(2) {
+  fill: #F16529;
+}
+
+.logo-html path:nth-child(3) {
+  fill: #EBEBEB;
+}
+
+.logo-html path:nth-child(4) {
+  fill: white;
+}
+
 @font-face {
   font-family: "Gilroy-Bold";
   src: url("../assets/gilroy-bold.eot");
@@ -157,16 +173,23 @@ section {
   display: flex;
   justify-content: center;
   gap: 50px;
+  height: 100%;
 }
 
 .slider-block {
   display: flex;
+  justify-content: space-between;
   flex-flow: column;
   gap: 20px;
   max-width: 120px;
+  height: auto;
 }
 
 .slider-block img {
+  width: 100%;
+}
+
+.slider-block svg {
   width: 100%;
 }
 
