@@ -97,18 +97,18 @@
         <div class="wrapper">
             <h2>Contacts</h2>
             <p>Follow me in social networks or contact with me via E-mail:</p>
-            <form action="#" method="post" class="contacts-form">
+            <form action="https://formspree.io/f/xvovvlzo" method="post" class="contacts-form">
                 <div class="users-info">
-                        <input type="text" name="users-name" id="users-name" placeholder="Full Name *" required>
-                        <input type="email" name="email" id="email" placeholder="E-mail *" required> 
+                        <input type="text" name="name" id="users-name" placeholder="Full Name *" required>
+                        <input type="email" name="_replyto" id="email" placeholder="E-mail *" required> 
                 </div>
-                <div class="message-subject">
+                <!--<div class="message-subject">
                     <input type="text" list="message-subjects" name="subject" id="subject" placeholder="Subject of message *" required>
                     <datalist id="message-subjects">
                         <option value="Offer"></option>
                         <option value="Error noticed"></option>
                     </datalist>
-                </div>
+                </div> -->
                 <div class="message-block">
                     <textarea name="message" id="message" maxlength="1500" placeholder="Message *" required></textarea>
                 </div>
@@ -167,15 +167,5 @@
             <p>2020 © All right reserved by <a href="tg://resolve?domain=usavkov" target="_blank">Usavkov</a></p>
         </div>
     </footer>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.2.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
 </body>
 </html>
