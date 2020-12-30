@@ -97,16 +97,22 @@
         <div class="wrapper">
             <h2>Contacts</h2>
             <p>Follow me in social networks or contact with me via E-mail:</p>
-            <form action="" method="post" class="contacts-form">
-                <div class="email-block">
-                    <label for="email">Your e-mail:</label>
-                    <input type="email" name="email" id="email">
+            <form action="#" method="post" class="contacts-form">
+                <div class="users-info">
+                        <input type="text" name="users-name" id="users-name" placeholder="Full Name *" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail *" required> 
+                </div>
+                <div class="message-subject">
+                    <input type="text" list="message-subjects" name="subject" id="subject" placeholder="Subject of message *" required>
+                    <datalist id="message-subjects">
+                        <option value="Offer"></option>
+                        <option value="Error noticed"></option>
+                    </datalist>
                 </div>
                 <div class="message-block">
-                    <label for="message">Your message:</label>
-                    <textarea name="message" id="message" maxlength="1500"></textarea>
+                    <textarea name="message" id="message" maxlength="1500" placeholder="Message *" required></textarea>
                 </div>
-                <input type="button" value="Submit" id="submit">
+                <input type="submit" value="Submit" id="submit">
             </form>
             <section>
                 <ul  class="social">
@@ -161,7 +167,7 @@
             <p>2020 © All right reserved by <a href="tg://resolve?domain=usavkov" target="_blank">Usavkov</a></p>
         </div>
     </footer>
-    
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.2.1/firebase-app.js"></script>
 
