@@ -135,10 +135,6 @@ section {
   border-right: 2px solid black;
 }
 
-.ru-eng li:last-child a {
-  color: black;
-}
-
 .myphoto {
   width: 100%;
   margin-bottom: 80px;

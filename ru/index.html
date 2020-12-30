@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuri Savkov</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Юрий Савков</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about-me">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <hr>
             <section class="hat">
                 <div class="fullname">
-                    <h1 class="myname">Yuri</h1>
-                    <h1 class="mysurname">Savkov</h1>
+                    <h1 class="myname">Юрий</h1>
+                    <h1 class="mysurname">Савков</h1>
                 </div>
                 <p class="info">
                     Junior Developer<br>
-                    22 Years old, Belarus
+                    22 года, Беларусь
                 </p>
                 <ul class="ru-eng">
-                    <li><a href="ru/">RU</a></li>
-                    <li><a href="" style="color: black">ENG</a></li>
+                    <li><a href="" style="color: black">RU</a></li>
+                    <li><a href="../">ENG</a></li>
                 </ul>
             </section>
             <picture class="myphoto">
-                <source srcset="images/me3.jpg" media="(min-width: 800px)" class="myphoto">
-                <img src="images/me2.jpg" alt="Yuri Savkov" class="myphoto">
+                <source srcset="../images/me3.jpg" media="(min-width: 800px)" class="myphoto">
+                <img src="../images/me2.jpg" alt="Yuri Savkov" class="myphoto">
             </picture>
         </div>
     </header>  
@@ -43,7 +43,7 @@
     <main>
         <section class="about-me" id="about-me">
            <div class="wrapper">
-                <h2>About me</h2>
+                <h2>Обо мне</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque atque blanditiis distinctio ullam deserunt vero quas asperiores enim in laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nemo sunt, quidem consequatur asperiores dicta?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nostrum dolores dolorem nisi. Sequi consequuntur unde recusandae labore, fuga cum eum obcaecati.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -51,8 +51,8 @@
         </section>
         <section class="skills" id="skills">
             <div class="wrapper">
-                <h2>Skills</h2>
-                <p>I work with technologies such as</p>
+                <h2>Навыки</h2>
+                <p>В работе используются такие технологии, как</p>
                 <section class="slider">
                     <article class="slider-block">
                         <svg viewBox="0 0 1771 2009" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-html">
@@ -64,15 +64,15 @@
                         <p>HTML5</p>
                     </article>
                     <article class="slider-block">
-                        <img src="images/techs/css3.svg" alt="CSS3">
+                        <img src="../images/techs/css3.svg" alt="CSS3">
                         <p>CSS3</p>
                     </article>
                     <article class="slider-block">
-                        <img src="images/techs/js.svg" alt="JavaScript">
+                        <img src="../images/techs/js.svg" alt="JavaScript">
                         <p>JavaScript</p>
                     </article>
                     <article class="slider-block">
-                        <img src="images/techs/git.svg" alt="Git">
+                        <img src="../images/techs/git.svg" alt="Git">
                         <p>Git</p>
                     </article>
                 </section>
@@ -80,14 +80,14 @@
         </section>
         <section class="portfolio" id="portfolio">
             <div class="wrapper">
-                <h2>Portfolio</h2>
+                <h2>Портфолио</h2>
                 <figure class="projects">
                     <picture>
-                        <source srcset="images/projects/wildlife-cut.png" media="(min-width: 800px)" class="projects-img">
-                        <img src="images/projects/wildlife-cut.png" alt="Wildlife" class="projects-img">
+                        <source srcset="../images/projects/wildlife-cut.png" media="(min-width: 800px)" class="projects-img">
+                        <img src="../images/projects/wildlife-cut.png" alt="Wildlife" class="projects-img">
                     </picture>
                     <figcaption>
-                        <a href="https://usavkov-wildlife.netlify.app/" target="_blank">Wildlife - implementation for RS School</a>
+                        <a href="https://usavkov-wildlife.netlify.app/" target="_blank">Wildlife - реализация задания для RS School</a>
                     </figcaption>  
                 </figure>
             </div>
@@ -95,11 +95,11 @@
     </main>
     <aside class="contacts" id="contacts">
         <div class="wrapper">
-            <h2>Contacts</h2>
-            <p>Follow me in social networks or contact with me via E-mail:</p>
+            <h2>Контакты</h2>
+            <p>Ищите меня в социальных сетях или свяжитесь по электронной почте:</p>
             <form action="https://formspree.io/f/xvovvlzo" method="post" class="contacts-form">
                 <div class="users-info">
-                        <input type="text" name="name" id="users-name" placeholder="Full Name *" required>
+                        <input type="text" name="name" id="users-name" placeholder="Ваше имя *" required>
                         <input type="email" name="_replyto" id="email" placeholder="E-mail *" required> 
                 </div>
                 <!--<div class="message-subject">
@@ -110,9 +110,9 @@
                     </datalist>
                 </div> -->
                 <div class="message-block">
-                    <textarea name="message" id="message" maxlength="1500" placeholder="Message *" required></textarea>
+                    <textarea name="message" id="message" maxlength="1500" placeholder="Сообщение *" required></textarea>
                 </div>
-                <input type="submit" value="Submit" id="submit">
+                <input type="submit" value="Отправить" id="submit">
             </form>
             <section>
                 <ul  class="social">
@@ -164,7 +164,7 @@
     </aside>
     <footer>
         <div class="wrapper">
-            <p>2020 © All right reserved by <a href="tg://resolve?domain=usavkov" target="_blank">Usavkov</a></p>
+            <p>2020 © Все права сохранены за <a href="tg://resolve?domain=usavkov" target="_blank">Usavkov</a></p>
         </div>
     </footer>
 </body>
