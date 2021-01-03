@@ -1,17 +1,77 @@
+/*HTML*/
 .logo-html path:nth-child(1) {
-  fill: #E44D26;
+  fill: #e44d26;
 }
 
 .logo-html path:nth-child(2) {
-  fill: #F16529;
+  fill: #f16529;
 }
 
 .logo-html path:nth-child(3) {
-  fill: #EBEBEB;
+  fill: #ebebeb;
 }
 
 .logo-html path:nth-child(4) {
   fill: white;
+}
+
+/*CSS*/
+.logo-css path:nth-child(1) {
+  fill: #2062af;
+}
+
+.logo-css path:nth-child(2) {
+  fill: #3c9cd7;
+}
+
+.logo-css path:nth-child(3) {
+  fill: white;
+}
+
+.logo-css path:nth-child(4) {
+  fill: url(#paint0_linear);
+}
+
+.logo-css path:nth-child(5) {
+  fill: url(#paint1_linear);
+}
+
+.logo-css path:nth-child(6) {
+  fill: url(#paint2_linear);
+}
+
+.logo-css path:nth-child(7) {
+  fill: black;
+}
+
+.logo-css path:nth-child(8) {
+  fill: url(#paint3_linear);
+}
+
+.logo-css path:nth-child(9) {
+  fill: black;
+}
+
+/*JS*/
+.logo-js path:nth-child(1) {
+  fill: #e6a329;
+}
+
+.logo-js path:nth-child(2) {
+  fill: #f1bf22;
+}
+
+.logo-js path:nth-child(3) {
+  fill: white;
+}
+
+.logo-js path:nth-child(4) {
+  fill: #ebebeb;
+}
+
+/*Git*/
+.logo-git path {
+  fill: #de4c36;
 }
 
 @font-face {
@@ -29,6 +89,7 @@
   /* Chrome < 4, Legacy iOS */
 }
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -75,10 +136,10 @@ hr {
 
 .nav-menu {
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 30px 0;
 }
@@ -94,13 +155,24 @@ hr {
 
 .hat {
   padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .fullname {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
   gap: 20px;
 }
@@ -115,7 +187,11 @@ hr {
   font-weight: 900;
   font-size: 0.9em;
   letter-spacing: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transform: rotate(270deg) translate(32px, 40px);
+  -ms-transform: rotate(270deg) translate(32px, 40px);
   transform: rotate(270deg) translate(32px, 40px);
 }
 
@@ -140,49 +216,70 @@ hr {
 
 .about-me {
   height: max(100vh, 400px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background: #F6F6F6;
 }
 
 .about-me > .wrapper {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
   text-align: center;
   gap: 50px;
 }
 
 .skills {
   height: max(100vh, 400px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .skills > .wrapper {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
   text-align: center;
   gap: 50px;
 }
 
 .slider {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
 }
 
 .slider-block {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column;
-  gap: 20px;
   max-width: 120px;
   height: auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+.slider-block p {
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 .slider-block img {
@@ -195,22 +292,32 @@ hr {
 
 .portfolio {
   height: max(100vh, 700px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background: #F6F6F6;
 }
 
 .portfolio > .wrapper {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
   gap: 40px;
   text-align: center;
 }
 
 .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
   gap: 20px;
 }
@@ -227,22 +334,31 @@ hr {
   min-height: max(100vh, 540px);
   max-width: 1200px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .contacts > .wrapper {
-  flex: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
   gap: 40px;
   text-align: center;
 }
 
 .contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
   gap: 20px;
   font-family: "Gilroy-Medium";
@@ -252,13 +368,19 @@ hr {
 
 .users-info,
 .message-subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 #email,
 #users-name,
 #subject {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
   flex: auto;
   max-width: 500px;
   font-family: inherit;
@@ -268,8 +390,14 @@ hr {
 }
 
 .message-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
+  -ms-flex-line-pack: start;
   align-content: flex-start;
 }
 
@@ -289,6 +417,7 @@ hr {
   background: white;
   border: 2px solid #828282;
   outline: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   cursor: pointer;
 }
@@ -304,7 +433,11 @@ hr {
 }
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -320,7 +453,11 @@ hr {
 
 footer {
   padding: 20px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -332,7 +469,9 @@ footer {
 
   .myphoto {
     height: 350px;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: 0 15%;
     object-position: 0 15%;
   }
 
