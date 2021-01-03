@@ -312,6 +312,7 @@ hr {
 }
 
 .projects {
+  display: -ms-grid;
   display: grid;
   gap: 20px;
 }
@@ -347,6 +348,7 @@ hr {
 }
 
 .contacts-form {
+  display: -ms-grid;
   display: grid;
   gap: 20px;
   font-family: "Gilroy-Medium";
@@ -354,14 +356,16 @@ hr {
   text-align: justify;
 }
 
-.users-info,
+.users-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
 .message-subject {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
 }
 
 #email,
@@ -421,12 +425,13 @@ hr {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 48px);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .social svg {
@@ -479,10 +484,6 @@ footer {
 
   #message {
     height: 120px;
-  }
-
-  .social {
-    gap: 30px;
   }
 
   .social > li > a > img {
