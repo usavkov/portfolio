@@ -74,6 +74,11 @@
   fill: #de4c36;
 }
 
+/*Icon-menu*/
+.icon-menu svg {
+  fill: black;
+}
+
 @font-face {
   font-family: "Gilroy-Bold";
   src: url("../assets/gilroy-bold.eot");
@@ -151,6 +156,10 @@ hr {
 
 .nav-menu a:hover {
   color: black;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .hat {
@@ -489,6 +498,107 @@ footer {
   .social > li > a > img {
     width: 48px;
     height: 48px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 500px;
+  }
+
+  .myphoto {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    max-width: 360px;
+  }
+
+  .nav-menu,
+.header-separator,
+.hat > .ru-eng {
+    display: none;
+  }
+
+  header > .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2em;
+    grid-template-rows: 200px 1fr;
+    gap: 2.5em;
+  }
+
+  .hat {
+    display: grid;
+    gap: 30px;
+    grid-area: 1/1/1 span/1 span;
+  }
+
+  .icon-menu {
+    display: block;
+    width: 2em;
+    grid-area: 1/2/1 span/1 span;
+    margin-top: 40px;
+  }
+
+  .myphoto {
+    height: 100%;
+    grid-area: 2/1/1 span/2 span;
+    object-position: 70% 0;
+    -o-object-position: 70% 0;
+  }
+
+  .about-me {
+    height: max(100vh, 600px);
+  }
+
+  .skills {
+    height: max(100vh, 1200px);
+  }
+
+  .slider {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts {
+    min-height: max(100vh, 800px);
+  }
+
+  .users-info {
+    grid-template-columns: 1fr;
+  }
+
+  #message {
+    height: 15em;
+  }
+
+  .social > li > a > img {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wrapper {
+    max-width: 300px;
+  }
+
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    min-width: 260px;
+  }
+
+  .wrapper {
+    max-width: 260px;
   }
 }
 
