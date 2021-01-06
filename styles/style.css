@@ -205,7 +205,7 @@ hr {
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 32px;
-  grid-template-rows: 1fr 180px;
+  grid-template-rows: 1fr 1fr;
   top: 0;
   left: 0;
   height: 100vh;
@@ -219,7 +219,7 @@ hr {
   margin-top: 64px;
   align-content: start;
   font-size: 2em;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .mobile-menu .icon-menu {
@@ -232,7 +232,7 @@ hr {
   height: 32px;
   grid-column: 2/3;
   font-size: 2em;
-  transform: rotate(90deg) translate(0, 32px);
+  transform: rotate(90deg) translate(40px, 32px);
 }
 
 .wrapper {
