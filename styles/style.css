@@ -74,6 +74,27 @@
   fill: #de4c36;
 }
 
+/* Figma */
+.st0 {
+  fill: #0acf83;
+}
+
+.st1 {
+  fill: #a259ff;
+}
+
+.st2 {
+  fill: #f24e1e;
+}
+
+.st3 {
+  fill: #ff7262;
+}
+
+.st4 {
+  fill: #1abcfe;
+}
+
 /*Icon-menu*/
 .icon-menu svg {
   fill: black;
@@ -164,6 +185,56 @@ hr {
   background: #828282;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.cutted {
+  overflow: hidden;
+}
+
+.block {
+  display: block;
+}
+
+.grid {
+  display: grid !important;
+}
+
+.mobile-menu {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  grid-template-rows: 1fr 180px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  overflow: scroll;
+}
+
+.mobile-menu .nav-menu {
+  margin-left: 32px;
+  margin-top: 64px;
+  align-content: start;
+  font-size: 2em;
+  gap: 1.5em;
+}
+
+.mobile-menu .icon-menu {
+  justify-self: end;
+  margin-top: 64px;
+  margin-right: 32px;
+}
+
+.mobile-menu .ru-eng {
+  height: 32px;
+  grid-column: 2/3;
+  font-size: 2em;
+  transform: rotate(90deg) translate(0, 32px);
+}
+
 .wrapper {
   max-width: 1400px;
   margin: auto;
@@ -190,6 +261,7 @@ hr {
 
 .icon-menu {
   display: none;
+  cursor: pointer;
 }
 
 .hat {
