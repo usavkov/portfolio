@@ -382,10 +382,13 @@ hr {
 }
 
 .slider-block {
-  max-width: 100%;
-  height: auto;
+  max-width: 240px;
+  height: 360px;
   display: -ms-grid;
   display: grid;
+  grid-template-rows: 1fr 2em;
+  align-items: center;
+  align-content: center;
   gap: 20px;
 }
 
@@ -397,6 +400,7 @@ hr {
 
 .slider-block svg {
   width: 240px;
+  height: 100%;
 }
 
 .portfolio {
@@ -623,7 +627,8 @@ footer a {
   }
 
   .slider-block {
-    max-width: 100%;
+    max-width: 120px;
+    height: 180px;
   }
 
   .slider-block svg {
