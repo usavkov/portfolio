@@ -216,7 +216,7 @@ hr {
 
 .mobile-menu .nav-menu {
   margin-left: 32px;
-  margin-top: 64px;
+  margin-top: 32px;
   align-content: start;
   font-size: 2em;
   gap: 1em;
@@ -224,15 +224,17 @@ hr {
 
 .mobile-menu .icon-menu {
   justify-self: end;
-  margin-top: 64px;
+  height: 24px;
+  width: 24px;
+  margin-top: 32px;
   margin-right: 32px;
 }
 
 .mobile-menu .ru-eng {
   height: 32px;
   grid-column: 2/3;
-  font-size: 2em;
-  transform: rotate(90deg) translate(40px, 32px);
+  font-size: 1.5em;
+  transform: rotate(90deg) translate(0, 32px);
 }
 
 .wrapper {
