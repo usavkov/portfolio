@@ -9,7 +9,6 @@ scrollBtn.addEventListener("click", (ev) => {
   function up() {
     window.scrollTo(0, currentY);
     currentY -= 150;
-    console.log(currentY);
 
     if (window.pageYOffset > 0) {
       window.requestAnimationFrame(up);

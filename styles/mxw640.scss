@@ -1,0 +1,63 @@
+@media screen and (max-width: 640px) {
+    .wrapper {
+        max-width: 360px;
+    }
+
+    .nav-menu,
+    .header-separator,
+    .hat > .ru-eng {
+        display: none;
+    }
+
+    header > .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2em;
+        grid-template-rows: 200px 1fr;
+        gap: 2.5em;
+    }
+
+    .hat {
+        display: grid;
+        gap: 30px;
+        grid-area: 1 / 1 / 1 span / 1 span;
+    }
+
+    .info {
+        height: 100%;
+    }
+
+    .icon-menu {
+        display: block;
+        width: 2em;
+        grid-area: 1 / 2 / 1 span / 1 span;
+        margin-top: 40px;
+    }
+
+    .myphoto {
+        height: 100%;
+        grid-area: 2 / 1 / 1 span / 2 span;
+        object-position: 50% 0;
+        -o-object-position: 50% 0;
+    }
+
+    .slider {
+        grid-template-columns: 1fr;
+    }
+
+    .users-info {
+        grid-template-columns: 1fr;
+    }
+
+    #message {
+        height: 15em;
+    }
+
+    #submit {
+        justify-self: center
+    }
+
+    .social > li > a > img {
+        width: 32px;
+        height: 32px;
+    }
+}

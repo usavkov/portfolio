@@ -1,0 +1,11 @@
+@media screen and (max-width: 425px) {
+    .wrapper {
+        max-width: 300px;
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+    }
+}

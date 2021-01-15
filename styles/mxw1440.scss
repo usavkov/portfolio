@@ -1,0 +1,100 @@
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    .wrapper {
+        max-width: 900px;
+    }
+
+    .nav-menu a {
+        font-size: 1em;
+    }
+
+    .hat {
+        margin: 40px 0;
+    }
+
+    .fullname {
+        gap: 20px;
+    }
+
+    .ru-eng {
+        font-size: .9em;
+    }
+    
+    .myphoto {
+        height: 350px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 0 15%;
+           object-position: 0 15%;
+    }
+
+    .slider {
+        gap: 50px;
+    }
+
+    .slider-block {
+        max-width: 120px;
+        height: 180px;
+    }
+
+    .slider-block svg {
+        width: 120px;
+    }
+    
+    .projects {
+        width: 100%;
+    }
+
+    .contacts > .wrapper {
+        width: 60%;
+        gap: 40px;
+    }
+
+    .contacts-form {
+        font-size: 1em;
+        gap: 20px;
+    }
+    
+    .users-info {
+        gap: 30px;
+    }
+    
+    #email,
+    #users-name,
+    #subject {
+        height: 30px;
+        font-size: 1em;
+    }
+    
+    #message {
+        height: 120px;
+        font-size: 1em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 30px;
+        max-width: 150px;
+    }
+
+    .social svg {
+        height: 48px;
+        width: 48px;
+    }
+
+}
