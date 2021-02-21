@@ -26,17 +26,21 @@
     display: flex;
   }
   
-  @mixin flex($values) {
-    -webkit-box-flex: $values;
-    -ms-flex:  $values;
-    flex:  $values;
-  }
-  
-  @mixin order($val) {
-    -webkit-box-ordinal-group: $val;     
-    -ms-flex-order: $val;  
-    order: $val;
-  }
+@mixin flex($values) {
+-webkit-box-flex: $values;
+-ms-flex:  $values;
+flex:  $values;
+}
+
+@mixin order($val) {
+-webkit-box-ordinal-group: $val;     
+-ms-flex-order: $val;  
+order: $val;
+}
+
+:root {
+	scroll-behavior: smooth;
+}
 
 * {
 	-webkit-box-sizing: border-box;

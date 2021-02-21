@@ -135,6 +135,10 @@
   src: url("../assets/fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-medium.woff2") format("woff2"), url("../assets/fonts/gilroy-medium.woff") format("woff"), url("../assets/fonts/gilroy-medium.ttf") format("truetype"), url("../assets/fonts/gilroy-medium.svg#gilroy-medium") format("svg");
   /* Chrome < 4, Legacy iOS */
 }
+:root {
+  scroll-behavior: smooth;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
