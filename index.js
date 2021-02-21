@@ -4,18 +4,13 @@ const scrollBtn = document.querySelector("#scroll-up");
 /* Skroll up*/
 
 scrollBtn.addEventListener("click", (ev) => {
-  let currentY = window.pageYOffset;
-
-  function up() {
-    window.scrollTo(0, currentY);
-    currentY -= 150;
-
-    if (window.pageYOffset > 0) {
-      window.requestAnimationFrame(up);
-    }
+  if (window.pageYOffset > 0) {
+    window.scrollTo({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });
   }
-
-  return up();
 });
 
 window.addEventListener("scroll", (ev) => {
