@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:ui": "lerna run --scope ui dev",
+    "translations:upload": "lerna run --scope ui translations:upload",
+    "translations:download": "lerna run --scope ui translations:download"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.2"
+  }
+}
