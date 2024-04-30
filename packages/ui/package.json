@@ -19,9 +19,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "translations:upload": "localazy upload",
-    "translations:download": "localazy download"
+    "lint": "next lint"
   },
   "bugs": {
     "url": "https://github.com/usavkov/portfolio/issues"

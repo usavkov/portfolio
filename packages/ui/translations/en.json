@@ -2,5 +2,10 @@
   "navigation.topmenu.home": "Home",
   "navigation.topmenu.aboutme": "About me",
   "navigation.topmenu.skills": "Skills",
-  "navigation.topmenu.contacts": "Contacts"
+  "navigation.topmenu.contacts": "Contacts",
+
+  "locale.en": "EN",
+  "locale.ru": "RU",
+
+  "form.field.email.label": "E-mail"
 }
