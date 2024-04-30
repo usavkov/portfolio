@@ -5,5 +5,7 @@
   "navigation.topmenu.contacts": "Contacts",
 
   "locale.en": "EN",
-  "locale.ru": "RU"
+  "locale.ru": "RU",
+
+  "form.field.email.label": "E-mail"
 }
