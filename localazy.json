@@ -1,0 +1,9 @@
+{
+  "upload": {  
+    "type": "json",
+    "files": "packages/ui/translations/en.json"         
+  },
+  "download": {
+    "files": "packages/ui/translations/${lang}.json"
+  }
+}
