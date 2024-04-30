@@ -1,9 +1,9 @@
 name: Upload to Localazy
 on: 
   push:
-    branches: ['main']
-    paths: 
-      - 'packages/ui/translations/en.json'
+    branches: ['monorepo']
+    # paths: 
+    #   - 'packages/ui/translations/en.json'
 
 jobs:
   localazy-upload:

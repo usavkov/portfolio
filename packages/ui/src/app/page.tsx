@@ -9,7 +9,6 @@ export default function Page() {
 
   return (
     <>
-      Hi
       <FormattedMessage id="navigation.topmenu.home" />
     </>
   )

@@ -5,9 +5,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const lang = 'en';
+
   return (
-    <I18Provider>
-      <html lang="en">
+    <I18Provider lang={lang}>
+      <html lang={lang}>
         <body>{children}</body>
       </html>
     </I18Provider>
