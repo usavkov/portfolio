@@ -3,7 +3,7 @@ on:
   push:
     branches: ['main']
     paths: 
-      - 'translations/en.json'
+      - 'packages/ui/translations/en.json'
 
 jobs:
   localazy-upload:
