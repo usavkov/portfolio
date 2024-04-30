@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "start:ui": "lerna run --scope ui dev",
     "translations:upload": "lerna run --scope ui translations:upload",
     "translations:download": "lerna run --scope ui translations:download"
   },
