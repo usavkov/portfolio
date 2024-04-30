@@ -1,9 +1,9 @@
 name: Upload to Localazy
 on: 
   push:
-    branches: ['main']
-    paths: 
-      - 'packages/ui/translations/en.json'
+    branches: ['main', 'monorepo']
+    # paths: 
+    #   - 'packages/ui/translations/en.json'
 
 jobs:
   localazy-upload:
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: localazy/upload@v1
         with:
-          workdir: packages/ui
+          # workdir: packages/ui
           read_key: ${{ secrets.LOCALAZY_READ_KEY }}
           write_key: ${{ secrets.LOCALAZY_WRITE_KEY }}
 
