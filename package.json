@@ -4,6 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "translations:upload": "lerna run --scope ui translations:upload",
+    "translations:download": "lerna run --scope ui translations:download"
+  },
   "dependencies": {},
   "devDependencies": {
     "lerna": "^8.1.2"
